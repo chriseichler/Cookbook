@@ -1,0 +1,9 @@
+<ul>
+	<% @cookbooks.each do |cookbook| %>
+	<li>
+		<p> Title: <%= cookbook.title %></p>
+		<p> Cuisine: <%= cookbook.cuisine %></p>
+		<p> Description: <%= cookbook.description %></p>
+	</li>
+	<% end %>
+</ul>
