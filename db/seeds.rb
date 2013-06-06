@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Cookbook.delete_all
 Recipe.delete_all
+Ingredient.delete_all
 
 c1 = Cookbook.create(title: "The Joy of Cooking", cuisine: "Modern Fusion", description: "Good food!", isbn: 978)
 c2 = Cookbook.create(title: "The Joy of Cooking II", cuisine: "Moderner Fusion", description: "Better food!", isbn: 978)
@@ -24,3 +25,10 @@ c1.recipes << r1 << r2
 c2.recipes << r3 << r5
 c2.recipes << r4
 
+i1 = Ingredient.create(name: 'egg', measurement: 'egg')
+i2 = Ingredient.create(name: 'noodles', measurement: 'ounce')
+i3 = Ingredient.create(name: 'cheese', measurement: 'ounce')
+
+r1.ingredients<<i3
+r2.ingredients<<i1<<i2
+r5.ingredients<<i3

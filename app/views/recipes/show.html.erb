@@ -3,7 +3,7 @@
 <p>Cooktime: <%= @recipe.cook_time %> </p>
 <p>Instructions: <%= @recipe.instructions %></p>
 <img src=<%= @recipe.image_url %> />
-<p>From Cookbook 
+<p>From Cookbook: 
 <p>
 	<% if @recipe.cookbook.present? %>
 	<%= link_to @recipe.cookbook.title, @recipe.cookbook %>

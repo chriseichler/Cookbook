@@ -1,0 +1,13 @@
+<h1><%= @ingredient.name %>
+<p>Name: <%= @ingredient.name %> </p>
+<p>Measurement: <%= @ingredient.measurement %> </p>
+<p>In Recipes: 
+<p>
+	<% @ingredient.recipes do |recipe|%>
+  <%= recipe.name %>
+	<% end %>
+</p>
+<%= button_to 'Edit', edit_ingredient_path(@ingredient), method: 'get' %>
+<%= button_to 'Delete', ingredient_path(@ingredient), method: 'delete' %>
+
+

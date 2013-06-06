@@ -1,5 +1,6 @@
 <ul>
 	<% @cookbooks.each do |cookbook| %>
+	<p><%= link_to cookbook.title, cookbook %></p>
 	<li>
 		<p> Title: <%= cookbook.title %></p>
 		<p> Cuisine: <%= cookbook.cuisine %></p>

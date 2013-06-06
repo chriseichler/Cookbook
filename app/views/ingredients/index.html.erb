@@ -1,0 +1,7 @@
+<h1>Ingredients</h1>
+<% @ingredients.each do |ingredient| %>
+
+<p><%= link_to ingredient.name, ingredient %></p>
+<p>Name: <%= ingredient.name %></p>
+<p>Measurement: <%= ingredient.measurement %></p>
+<% end %>
