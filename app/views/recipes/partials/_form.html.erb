@@ -1,0 +1,17 @@
+<%= form_for @recipe do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.label :cook_time %>
+<%= f.number_field :cook_time %>
+<%= f.label :serving_size %>
+<%= f.number_field :serving_size %>
+<%= f.label :instructions %>
+<%= f.text_field :instructions %>
+<%= f.label :image_url %>
+<%= f.text_field :image_url %>
+<%= f.label :course %>
+<%= f.text_field :course %>
+<%= f.label :cookbook_id %>
+<%= f.select :cookbook_id, Cookbook.all.map{ |cookbook| [cookbook.title, cookbook.id]} %>
+<%= f.submit %>
+<% end %>

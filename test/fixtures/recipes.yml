@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  instructions: MyText
+  name: MyString
+  serving_size: 1
+  image_url: 
+
+two:
+  instructions: MyText
+  name: MyString
+  serving_size: 1
+  image_url: 

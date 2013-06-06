@@ -1,0 +1,10 @@
+<h1>Recipes</h1>
+<% @recipes.each do |recipe| %>
+
+<p><%= link_to recipe.name, recipe %></p>
+<p>Instructions: <%= recipe.instructions %></p>
+<p>Serving Size: <%= recipe.serving_size %></p>
+<p>Course: <%= recipe.course %></p>
+<p>Cook Time: <%= recipe.cook_time %></p>
+<p><img src="<%= recipe.image_url %>" alt="food picture"</p>
+<% end %>
